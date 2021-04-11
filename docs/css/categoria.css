@@ -1,0 +1,23 @@
+body{
+    background-image: url(https://media.giphy.com/media/l46CCnESyYqtXKsyQ/giphy.gif);
+    background-size: 100px;
+  }
+  .header{
+    background-image: url(https://media.giphy.com/media/l46CCnESyYqtXKsyQ/giphy.gif);
+    background-size: 100px;
+  }
+  
+  .links{
+    background-color: rgb(241, 210, 228);
+  }
+  
+  .container{
+    background-color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 150p;
+    font-weight: 800;
