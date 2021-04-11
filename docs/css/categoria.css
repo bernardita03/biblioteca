@@ -8,7 +8,7 @@ body{
   }
   
   .links{
-    background-color: rgb(241, 210, 228);
+    background-color: #f5d2b1;
   }
   
   .container{
@@ -21,4 +21,13 @@ body{
     margin-bottom: 20px;
     font-size: 150p;
     font-weight: 800;
+  }
+
+  @media screen and (max-width:640px) {
+    .header {
+        flex-direction: column;
+    }
+    .footer {
+        display: none;
+    }
   }

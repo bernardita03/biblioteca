@@ -8,7 +8,7 @@ body{
   }
   
   .links{
-    background-color: rgb(241, 210, 228);
+    background-color: #f5d2b1;
   }
   
   .container{
@@ -85,8 +85,11 @@ body{
     }
   
     
-    @media screen and (max-width:680px) {
+    @media screen and (max-width:640px) {
       .header {
+          flex-direction: column;
+      }
+      .container{
           flex-direction: column;
       }
       .footer {
