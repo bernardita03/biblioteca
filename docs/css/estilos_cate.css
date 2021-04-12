@@ -38,3 +38,11 @@ h1{
     font-family: sans-serif;
 }
 
+@media screen and (max-width:640px) {
+    .header {
+        flex-direction: column;
+    }
+    .footer {
+        display: none;
+    }
+  }
