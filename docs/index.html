@@ -1,13 +1,33 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
+ 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/estilos.css">
-  <title>Tu biblio Online</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/estilos.css">
+ 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+ 
+    <title>Tu Biblio Online </title>
 </head>
+ 
 <body>
+    
   <div class="container">
 
 
@@ -31,6 +51,10 @@
   
         <a href="descargas.html">
           <div class="p-2">Descarga Libros</div>
+        </a>
+
+        <a href="registro.html">
+          <div class="p-2">Registrate</div>
         </a>
         
       </div>
@@ -92,7 +116,24 @@
   </div>
 
 <br>
-<h1>Nuestras Redes sociales</h1>
+
+<h2>USUARIOS DESTACADOS</h2>
+
+<div class="usuarios">
+ 
+  <button class="btn btn-danger" id="boton-usuarios">Usuarios destacados de la semana</button>
+  <div id="info" class="text-center">
+      <div id="lista-usuarios">
+
+      </div>
+
+  </div>
+
+</div>
+
+
+<br>
+<h3>Nuestras Redes sociales</h3>
 
 <div class="d-flex justify-content-center">
 <a href="https://www.instagram.com/tu_biblio_online/">
@@ -121,6 +162,8 @@
 
 </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/inicio.js"></script>
+
 </body>
+ 
 </html>
