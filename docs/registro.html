@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" integrity="sha512-6Uv+497AWTmj/6V14BsQioPrm3kgwmK9HYIyWP+vClykX52b0zrDGP7lajZoIY1nNlX4oQuh7zsGjmF7D0VZYA==" crossorigin="anonymous"></script>
+
+    <title>Registro</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+              <img src="img/IMG_2169.PNG" width="400" height="100"  alt=" logo">
+            </div>
+          </div>
+      
+          <div class="links">
+            <div class="d-flex justify-content-between"  >
+              <a href="index.html">
+                <div class="p-2">Inicio</div>
+              </a>
+              
+              
+              <a href="categorias.html">
+                <div class="p-2">Categorias</div>
+              </a>
+        
+              <a href="nosotros.html">
+                <div class="p-2">Sobre Nosotros</div>
+              </a>
+      
+              <a href="descargas.html">
+                <div class="p-2">Descarga Libros</div>
+              </a>
+              
+            </div>
+      
+            
+          </div>
+
+          <h1>Registrate en Tu Biblio Online</h1>
+
+          <h6>Para recibir las últimas novedades de sus libros favoritos rellene el siguiente formulario.</h6>
+
+        <div class="row">            
+                <div class="col-md-6" style="padding-top:30px;">
+
+                    <!-- FORM -->
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <h6>Ingrese sus nombres:</h6>
+                            <input type="text" name="nombre" id="nombre" class="form-control required" placeholder="Escriba aquí sus nombres">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <h6>Ingrese sus apellidos:</h6>
+                            <input type="text" name="apellido" id="apellido" class="form-control required" placeholder="Escriba aquí sus apellidos">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <h6>Ingrese su correo electronico:</h6>
+                            <input type="email" name="email" id="email" class="form-control required" placeholder="Ejemplo@ejemplo.com">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <h6>Ingrese su País:</h6>
+                            <input type="text" name="pais" id="pais" class="form-control required" placeholder="Escriba aquí su país">
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <h6>Seleccione su sexo:</h6>
+                                <input type="radio" name="Sexo" class="required"> Femenino <input type="radio" name="Sexo" class="required"> Masculino <input type="radio" name="Sexo" class="required"> Otro
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <h6>Seleccione las categorias de las cuales quiere recibir información:</h6>
+                                <input type="checkbox" name="categoria" class="required"> Terror
+                            </label>
+                            <label>
+                                <input type="checkbox" name="categoria" class="required"> Novelas
+                            </label>
+                            <label>
+                                <input type="checkbox" name="categoria" class="required"> Historietas
+                            </label>
+                            <label>
+                                <input type="checkbox" name="categoria" class="required"> Paranormal
+                            </label>
+                            <label>
+                                <input type="checkbox" name="categoria" class="required"> Niños
+                            </label>
+                            <label>
+                                <input type="checkbox" name="categoria" class="required"> Espiritualidad y Autoayuda
+                            </label>
+                            <label>
+                                <input type="checkbox" name="categoria" class="required"> Best Sellers
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <h6>Por cuál medio se entero de nuestra página:</h6>
+                            <select name="medio" class="required" name="cmbMedios">
+                                <option value="">-- Seleccionar --</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="ws">Whatsapp</option>
+                                <option value="amigo">Amigo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <h6>Dejenos alguna sugerencia o consulta:</h6>
+                            <input type="text" name="subjet" id="subjet" class="form-control" placeholder="Título">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control required"
+                                placeholder="Escriba aquí" rows="7"></textarea>
+                        </div>
+                        <br>
+                        <button id="submit-form">Enviar registro</button>
+                        
+                        
+                    </form>
+                    <!-- END FORM -->
+
+                </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+    <script src="js/registro.js"></script>
+    
+    <script type="text/javascript" src="js/mensaje.js"></script>  
+</body>
+
+</html>
