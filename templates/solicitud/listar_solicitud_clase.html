@@ -1,0 +1,49 @@
+{% extends 'base.html' %} 
+
+{% block titulo_principal %}
+
+<div id=titulo_pagina>
+    Lista de Solicitudes Registradas
+</div>
+{% endblock %} 
+
+
+
+
+{% block content %} 
+
+
+    <h3>Listado Solicitudes</h3>
+
+
+{% if object_list %}
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for solicitud in object_list %}
+        <tr>
+            <th scope="row">{{ solicitud.titulo }} </th>
+            <td>{{ solicitud.autor }}</td>
+            <td>{{ solicitud.id }}</td>
+            
+
+            <td><a class="btn btn-primary" href="{% url 'edit_solicitud' solicitud.id %}">Editar</a></td>
+            <td><a class="btn btn-danger" href="{% url 'del_solicitud' solicitud.id %}">Eliminar</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+{% else %}
+    <h1>No hay registros de solicitud</h1>
+{% endif %} {% endblock %}

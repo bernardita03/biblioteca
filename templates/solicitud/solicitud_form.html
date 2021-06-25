@@ -1,0 +1,15 @@
+{% extends 'Solicitud/base.html' %} 
+
+{% block titulo_principal %} Editar solicitud {% endblock %}
+
+{% block content %}
+    <h1>Editar</h1>
+    
+    <div class="content container">
+    <form method="POST">
+        {% csrf_token %} {{ form }}
+        <button type="submit">GRABAR</button>
+    </form>
+    </div>
+
+{% endblock %}
