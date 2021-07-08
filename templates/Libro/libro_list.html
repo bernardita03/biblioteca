@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+<h1 class="display-3">Docentes</h1>
+<hr>
+<a class="btn" role="button" href="{% url 'docentes_form' %}">Agregar</a>
+<hr>
+
+{% if not object_list %}
+<h1>No hay registro de docentes</h1>
+<br><br><br><br><br><br><br><br>
+{% else %}
+<table class="table table-bordered">
+    <thead>
+         <tr>
+             <td>Fotografia</td>
+             <td>Autor</td>
+             <td>Titulo</td>
+             <td>Categoria</td>
+         </tr>
+    </thead>
+    <tbody>  
+         {% for libro in object_list %}      
+         <tr>
+             <td><img src= ../../static/images/{{ libro.fotografia }} style="width: 100px;"/> </td>
+             <td>{{ libro.autor }}</td>
+             <td>{{ libro.titulo }}</td>
+             <td>{{ libro.categoria }}</td>
+             <td>
+                 <a class="btn btn-primary" href="{% url 'libros_update' libro.id%}">  Editar  </a>
+                 <a class="btn btn-danger" href="{% url 'libros_borrar' libro.id%}">Eliminar</a>
+             </td>
+             
+         </tr>
+         {% endfor %}                                
+    </tbody>
+</table>
+{% endif %}
+
+</div>
+
+{% endblock %}

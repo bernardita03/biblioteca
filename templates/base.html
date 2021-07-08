@@ -30,11 +30,11 @@
                 
                 {% if user.is_authenticated %}
                 {% if user.is_superuser %}
-                <li class="nav-item"><a style="color: red;" href="{% url 'Regitro:borrar_carrera' %}">Borrar carrera</a></li>
+                <li class="nav-item"><a style="color: rgb(0, 238, 255);" href="{% url 'Regitro:borrar_carrera' %}">Borrar carrera</a></li>
                 {% endif %}
                
                 <li class="nav-item"><a href="{% url 'logout' %}">Cerrar sesión</a></li>
-                <span class="ml-md-5" style="color: blue;"><strong>Usuario: {{ user.get_username }}</strong></span>
+                <span class="ml-md-5" style="color: rgb(240, 82, 142);"><strong>Usuario: {{ user.get_username }}</strong></span>
                 {% endif %}                
             </ul>
         </div>                                 
