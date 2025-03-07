@@ -1,0 +1,12 @@
+{
+  "name": "Documentación de prueba",
+  "description": "Documentación automática con Mintlify",
+  "version": "1.0.0",
+  "assistant": {
+    "autowrite": {
+      "enabled": true,
+      "auto_generate": true,
+      "languages": ["javascript", "html", "css", "php"]
+    }
+  }
+}
